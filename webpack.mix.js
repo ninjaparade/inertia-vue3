@@ -22,6 +22,6 @@ mix.alias({
     "@": path.resolve("./resources/js"),
 });
 
-// mix.webpackConfig({
-//     output: { chunkFilename: "js/[name].js[hash]" },
-// });
+mix.webpackConfig({
+    output: { chunkFilename: "js/[name].js[hash]" },
+});

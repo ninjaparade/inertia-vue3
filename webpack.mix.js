@@ -17,11 +17,8 @@ mix.postCss("resources/css/app.css", "public/css", [
 ])
     .js("resources/js/app.js", "public/js")
     .vue({ version: 3 });
+
 // New Alias plugin
 mix.alias({
     "@": path.resolve("./resources/js"),
-});
-
-mix.webpackConfig({
-    output: { chunkFilename: "js/[name].js[hash]" },
 });
